@@ -1,3 +1,4 @@
+
 let a: number = 30;
 a = 30;
 
@@ -13,20 +14,20 @@ person = [
 ];
 
 
-//enum
-enum Sizes {
+//enum : naming big for first letter (both number and)
+const enum Sizes {
   Small = 30,
   Meduim,
   Large,
 }
 
-enum SizeString {
+const enum SizeString {
   Small = "small",
   Meduim = "meduim",
   Large = "large",
 }
 
-enum PizzaPromotion {
+const enum PizzaPromotion {
   Monday = "Buy 1 free 1",
   Tuesday = "Normal",
 }
@@ -42,8 +43,7 @@ caculateTax(500);
 
 
 //object types
-
-let employee :{
+let employee : {
     readonly id : number;
     name : string;
     salary? : number;
@@ -59,5 +59,4 @@ let employee :{
         console.log(`${this.name} is retiring on ${date}`);
     }
 }
-
 employee.retirment(new Date())
